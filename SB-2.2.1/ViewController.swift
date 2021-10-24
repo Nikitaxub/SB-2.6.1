@@ -18,20 +18,21 @@ class ViewController: UIViewController {
         colorView.layer.cornerRadius = 20
     }
 
-    func getValue(fromSliderWithTag: Int) -> Float {
-        guard let slider = view.viewWithTag(fromSliderWithTag) as? UISlider else { return 0}
-        return round(slider.value * 100) / 100
+    func useValue(fromSliderWithTag: Int) -> Float {
+        guard let slider = view.viewWithTag(fromSliderWithTag) as? UISlider else { return 0 }
+        let sliderValue = round(slider.value * 100) / 100
+        if let sliderLabel = slider.superview?.subviews.filter({$0 is UILabel})[1] as? UILabel {
+            sliderLabel.text = String(sliderValue)
+        }
+        
+        return sliderValue
     }
 
     @IBAction func sliderChangeAction(_ sender: UISlider) {
-        let redSliderValue = getValue(fromSliderWithTag: 1)
-        let greenSliderValue = getValue(fromSliderWithTag: 2)
-        let blueSliderValue = getValue(fromSliderWithTag: 3)
-        
-        redValueLabel.text = String(redSliderValue)
-        greenValueLabel.text = String(greenSliderValue)    
-        blueValueLabel.text = String(blueSliderValue)
-        
+        let redSliderValue = useValue(fromSliderWithTag: 1)
+        let greenSliderValue = useValue(fromSliderWithTag: 2)
+        let blueSliderValue = useValue(fromSliderWithTag: 3)
+
         colorView.backgroundColor = UIColor(displayP3Red: CGFloat(redSliderValue), green: CGFloat(greenSliderValue), blue: CGFloat(blueSliderValue), alpha: 1.0)
     }
 }
