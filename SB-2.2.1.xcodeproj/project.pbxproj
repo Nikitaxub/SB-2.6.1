@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		F82F14132723B0B1005CEFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82F14122723B0B1005CEFE7 /* AppDelegate.swift */; };
 		F82F14152723B0B1005CEFE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82F14142723B0B1005CEFE7 /* SceneDelegate.swift */; };
-		F82F14172723B0B1005CEFE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82F14162723B0B1005CEFE7 /* ViewController.swift */; };
+		F82F14172723B0B1005CEFE7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82F14162723B0B1005CEFE7 /* SettingsViewController.swift */; };
 		F82F141A2723B0B1005CEFE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82F14182723B0B1005CEFE7 /* Main.storyboard */; };
 		F82F141C2723B0B2005CEFE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82F141B2723B0B2005CEFE7 /* Assets.xcassets */; };
 		F82F141F2723B0B2005CEFE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82F141D2723B0B2005CEFE7 /* LaunchScreen.storyboard */; };
+		F8DC6137273569C7000327A3 /* ColorFillingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC6136273569C7000327A3 /* ColorFillingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F82F140F2723B0B1005CEFE7 /* SB-2.2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SB-2.2.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82F14122723B0B1005CEFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82F14142723B0B1005CEFE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F82F14162723B0B1005CEFE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F82F14162723B0B1005CEFE7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F82F14192723B0B1005CEFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F82F141B2723B0B2005CEFE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82F141E2723B0B2005CEFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F82F14202723B0B2005CEFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DC6136273569C7000327A3 /* ColorFillingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFillingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				F82F14122723B0B1005CEFE7 /* AppDelegate.swift */,
 				F82F14142723B0B1005CEFE7 /* SceneDelegate.swift */,
-				F82F14162723B0B1005CEFE7 /* ViewController.swift */,
+				F82F14162723B0B1005CEFE7 /* SettingsViewController.swift */,
 				F82F14182723B0B1005CEFE7 /* Main.storyboard */,
+				F8DC6136273569C7000327A3 /* ColorFillingViewController.swift */,
 				F82F141B2723B0B2005CEFE7 /* Assets.xcassets */,
 				F82F141D2723B0B2005CEFE7 /* LaunchScreen.storyboard */,
 				F82F14202723B0B2005CEFE7 /* Info.plist */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82F14172723B0B1005CEFE7 /* ViewController.swift in Sources */,
+				F8DC6137273569C7000327A3 /* ColorFillingViewController.swift in Sources */,
+				F82F14172723B0B1005CEFE7 /* SettingsViewController.swift in Sources */,
 				F82F14132723B0B1005CEFE7 /* AppDelegate.swift in Sources */,
 				F82F14152723B0B1005CEFE7 /* SceneDelegate.swift in Sources */,
 			);
