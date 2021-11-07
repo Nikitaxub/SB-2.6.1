@@ -40,12 +40,19 @@ class SettingsViewController: UIViewController {
     // MARK: - Life Circle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         colorView.layer.cornerRadius = 20
+        
         redTextField.delegate = self
         greenTextField.delegate = self
         blueTextField.delegate = self
+        
         unwrapUIColor()
         updateUI(becauseOfColor: nil)
+        
+        addDoneButtonOnNumpad(textField: redTextField)
+        addDoneButtonOnNumpad(textField: greenTextField)
+        addDoneButtonOnNumpad(textField: blueTextField)
     }
 
     // MARK: - IB Actions
@@ -127,6 +134,24 @@ class SettingsViewController: UIViewController {
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    
+    private func addDoneButtonOnNumpad(textField: UITextField) {
+        let keypadToolbar: UIToolbar = UIToolbar()
+        
+        keypadToolbar.items=[
+            UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace,
+                            target: self,
+                            action: nil),
+            UIBarButtonItem(title: "Done",
+                            style: .done,
+                            target: textField,
+                            action: #selector(UITextField.resignFirstResponder))
+        ]
+        
+        keypadToolbar.sizeToFit()
+        
+        textField.inputAccessoryView = keypadToolbar
     }
 }
 
